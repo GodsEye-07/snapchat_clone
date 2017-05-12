@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		21D3AE0EE61F2A08BE26FB5E /* Pods_snapchat_clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3D6E1B35ABB637D13642C6 /* Pods_snapchat_clone.framework */; };
+		2A3C30001EC6606900462F6B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C2FFF1EC6606900462F6B /* loginViewController.swift */; };
+		2A3C30021EC6608A00462F6B /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C30011EC6608A00462F6B /* signupViewController.swift */; };
+		2A3C30041EC6610300462F6B /* googleSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C30031EC6610300462F6B /* googleSignUp.swift */; };
 		2A5CC72B1EBFA88A00BFB68F /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A5CC72A1EBFA88A00BFB68F /* GoogleService-Info-2.plist */; };
 		2ACEFAAF1EBCD77D00D322D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACEFAAE1EBCD77D00D322D4 /* AppDelegate.swift */; };
 		2ACEFAB11EBCD77D00D322D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACEFAB01EBCD77D00D322D4 /* ViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A3C2FFF1EC6606900462F6B /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		2A3C30011EC6608A00462F6B /* signupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
+		2A3C30031EC6610300462F6B /* googleSignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = googleSignUp.swift; sourceTree = "<group>"; };
 		2A5CC72A1EBFA88A00BFB68F /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		2ACEFAAB1EBCD77D00D322D4 /* snapchat_clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snapchat_clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACEFAAE1EBCD77D00D322D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,7 +92,10 @@
 				2ACEFAAE1EBCD77D00D322D4 /* AppDelegate.swift */,
 				2ACEFAB01EBCD77D00D322D4 /* ViewController.swift */,
 				2ACEFAC01EBCDEBC00D322D4 /* customButton.swift */,
+				2A3C30011EC6608A00462F6B /* signupViewController.swift */,
+				2A3C2FFF1EC6606900462F6B /* loginViewController.swift */,
 				2ACEFAB21EBCD77D00D322D4 /* Main.storyboard */,
+				2A3C30031EC6610300462F6B /* googleSignUp.swift */,
 				2ACEFAB51EBCD77D00D322D4 /* Assets.xcassets */,
 				2ACEFAB71EBCD77D00D322D4 /* LaunchScreen.storyboard */,
 				2A5CC72C1EBFAAFE00BFB68F /* plists */,
@@ -227,7 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A3C30041EC6610300462F6B /* googleSignUp.swift in Sources */,
+				2A3C30001EC6606900462F6B /* loginViewController.swift in Sources */,
 				2ACEFAB11EBCD77D00D322D4 /* ViewController.swift in Sources */,
+				2A3C30021EC6608A00462F6B /* signupViewController.swift in Sources */,
 				2ACEFAAF1EBCD77D00D322D4 /* AppDelegate.swift in Sources */,
 				2ACEFAC11EBCDEBC00D322D4 /* customButton.swift in Sources */,
 			);

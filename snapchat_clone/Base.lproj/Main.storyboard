@@ -68,7 +68,7 @@
         <!--Title-->
         <scene sceneID="sRL-om-mGM">
             <objects>
-                <viewController id="ROA-rR-CwU" sceneMemberID="viewController">
+                <viewController id="ROA-rR-CwU" customClass="signupViewController" customModule="snapchat_clone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BUL-OX-WtC"/>
                         <viewControllerLayoutGuide type="bottom" id="rZD-Vc-LCw"/>
@@ -104,9 +104,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Terms of Service"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heh-03-Dy7">
-                                <rect key="frame" x="157" y="291" width="75" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heh-03-Dy7">
+                                <rect key="frame" x="157" y="288" width="75" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Privacy Policy"/>
                             </button>
@@ -124,9 +123,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBb-tI-dIt" customClass="customButton" customModule="snapchat_clone" customModuleProvider="target">
-                                <rect key="frame" x="87" y="352" width="200" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBb-tI-dIt" customClass="customButton" customModule="snapchat_clone" customModuleProvider="target">
+                                <rect key="frame" x="87" y="352" width="210" height="40"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                 <state key="normal" title="Sign up &amp; Accept">
@@ -144,7 +142,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Or Login With" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SR-no-HdV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or Login With" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SR-no-HdV">
                                 <rect key="frame" x="135" y="431" width="105" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -165,13 +163,23 @@
                                         <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Xka-rS-bQk" kind="showDetail" id="2Eh-Kv-V2w"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="FBb-tI-dIt" firstAttribute="top" secondItem="heh-03-Dy7" secondAttribute="bottom" constant="38" id="9Hc-qg-lbv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2SR-no-HdV" secondAttribute="trailing" constant="119" id="BIu-Cd-Xqv"/>
                             <constraint firstItem="BLO-Cp-9oh" firstAttribute="top" secondItem="2SR-no-HdV" secondAttribute="bottom" constant="30" id="TJP-El-Cav"/>
+                            <constraint firstItem="FBb-tI-dIt" firstAttribute="leading" secondItem="dZK-Py-vv7" secondAttribute="leadingMargin" constant="71" id="X8n-xO-stG"/>
                             <constraint firstItem="rZD-Vc-LCw" firstAttribute="top" secondItem="BLO-Cp-9oh" secondAttribute="bottom" constant="138" id="Zog-1F-Sau"/>
+                            <constraint firstItem="2SR-no-HdV" firstAttribute="leading" secondItem="dZK-Py-vv7" secondAttribute="leadingMargin" constant="119" id="gls-5Q-AG6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FBb-tI-dIt" secondAttribute="trailing" constant="62" id="lbZ-v0-840"/>
                             <constraint firstItem="BLO-Cp-9oh" firstAttribute="leading" secondItem="dZK-Py-vv7" secondAttribute="leadingMargin" constant="96" id="ovS-OP-g11"/>
+                            <constraint firstItem="2SR-no-HdV" firstAttribute="top" secondItem="FBb-tI-dIt" secondAttribute="bottom" constant="39" id="pSu-nO-w6h"/>
+                            <constraint firstItem="2SR-no-HdV" firstAttribute="top" secondItem="FBb-tI-dIt" secondAttribute="bottom" constant="39" id="s4T-V9-Hsm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BLO-Cp-9oh" secondAttribute="trailing" constant="97" id="v2z-Nj-g9O"/>
                         </constraints>
                     </view>
@@ -181,10 +189,10 @@
             </objects>
             <point key="canvasLocation" x="885.60000000000002" y="265.81709145427288"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="6Ce-4R-ueW">
             <objects>
-                <viewController id="hJd-es-E9Y" sceneMemberID="viewController">
+                <viewController id="hJd-es-E9Y" customClass="loginViewController" customModule="snapchat_clone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TeM-ln-WRl"/>
                         <viewControllerLayoutGuide type="bottom" id="i9y-l1-uJx"/>
@@ -276,6 +284,9 @@
                                         <color key="value" red="1" green="0.0" blue="0.037429042760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Xka-rS-bQk" kind="showDetail" id="uOb-Op-eZB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.98028465509999996" blue="0.027955024009999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -284,6 +295,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QZR-hK-gW3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="885.60000000000002" y="-458.32083958020991"/>
+        </scene>
+        <!--Google Sign Up-->
+        <scene sceneID="w7V-hV-Xsq">
+            <objects>
+                <viewController id="Xka-rS-bQk" customClass="googleSignUp" customModule="snapchat_clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dWv-l3-nbd"/>
+                        <viewControllerLayoutGuide type="bottom" id="bfP-Zf-33m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9rA-RF-SFb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kud-6F-Nu7">
+                                <rect key="frame" x="139" y="435" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7D7-Wb-0Yp">
+                                <rect key="frame" x="190" y="579" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g8B-79-b8H">
+                                <rect key="frame" x="139" y="213" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc8-dW-SFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1671" y="-438"/>
         </scene>
     </scenes>
     <resources>
@@ -39617,4 +39667,7 @@ ACP/UQAj/1YAAAAAAAAEAQAAAAAAAABBAAAAAAAAAAAAAAAAACP/WA
         </image>
         <image name="snapchatLogin" width="1200" height="630"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="2Eh-Kv-V2w"/>
+    </inferredMetricsTieBreakers>
 </document>
